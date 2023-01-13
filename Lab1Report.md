@@ -3,7 +3,7 @@
 # Section 1: Downloading VS Code
  
 In order to install VS Code I first navigated to the VS code website link [here](https://code.visualstudio.com/download)
-
+ 
 
 ![Image](https://imgur.com/gallery/cXCa7P8)
 
