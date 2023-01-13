@@ -5,7 +5,7 @@
 In order to install VS Code I first navigated to the VS code website link [here](https://code.visualstudio.com/download)
 
 
-![Image](https://i.imgur.com/PbGy5dF.png)
+![Image](https://imgur.com/gallery/cXCa7P8)
 
 I then pressed download for your operating system which is mac. 
 Once my download was complete I was presented with the following when I opened the app:
