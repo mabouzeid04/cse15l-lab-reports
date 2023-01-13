@@ -1,4 +1,6 @@
- # Section 1: Downloading VS Code
+
+
+# Section 1: Downloading VS Code
  
 In order to install VS Code I first navigated to the VS code website link [here](https://code.visualstudio.com/download)
 ![Image](http://github.com/mabouzeid04/cse15l-lab-reports/blob/8576958ea022890a6d00d50e9a4d839e8b5f64a7/Screen%20Shot%202023-01-12%20at%203.17.19%20PM.png)
