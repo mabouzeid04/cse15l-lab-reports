@@ -40,8 +40,11 @@ Failure inducing input (JUnit):
   } 
   ```
   
-  The symptoms:
+  The symptoms for reversed():
+  ![Image](reversed%20symptoms.png)
   
+  The symptoms for reverseInPlace():
+  ![Image](reverseInPlace%20symptom.png)
   
   Before fixing the bugs in reverseInPlace(): 
   ```
@@ -66,9 +69,9 @@ Failure inducing input (JUnit):
   } 
   ```
   
-  What the bugs were in reverseInPlace() were: The issue with this code is that after it crosses the mid point of the array, it will start copying from the 
-  already changed elements which will lead to an inaccurate reversed array. I fixed this by making an entirely new array and making a deep copy of that. 
-  After that, I reversed from the deep copied array so that the elements don't change.
+  What the bugs were in reverseInPlace() were: The issue with this code is that after it crosses the mid point of the array, it will start copying from 
+  the already changed elements which will lead to an inaccurate reversed array. I fixed this by making an entirely new array and making a deep copy of 
+  that. After that, I reversed from the deep copied array so that the elements don't change.
   
   
   Before fixing the bugs in reversed(): 
@@ -105,7 +108,7 @@ Failure inducing input (JUnit):
   
   
   # Part 3: What I learned from lab in weeks 2 & 3
-  
+  I was very to learn about the URL interface, I didn't think it would be that simple and I felt good to be able to build something like that. 
   
   
   
