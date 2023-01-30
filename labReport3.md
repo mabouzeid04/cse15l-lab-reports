@@ -108,7 +108,7 @@ Failure inducing input (JUnit):
   
   
   # Part 3: What I learned from lab in weeks 2 & 3
-  I was very to learn about the URL interface, I didn't think it would be that simple and I felt good to be able to build something like that. 
+  I was very to learn about the URL interface, I didn't think it would be that simple and I felt good to be able to build something like that. I was also happy to practice my debugging skills and deepen my understanding of JUnit in Lab 3. 
   
   
   
