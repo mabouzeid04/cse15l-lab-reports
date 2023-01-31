@@ -116,7 +116,8 @@ Failure inducing input (JUnit):
   
   
   # Part 3: What I learned from lab in weeks 2 & 3
-  I was very to learn about the URL interface, I didn't think it would be that simple and I felt good to be able to build something like that. I found it especially interesting to learn that I could store past arguments into an array to keep track of them. I was also happy to practice my debugging skills and deepen my understanding of JUnit in Lab 3. 
+
+I was very to learn about the URL interface, I didn't think it would be that simple and I felt good to be able to build something like that. I found it especially interesting to learn that I could store past arguments into an array to keep track of them. I was also happy to practice my debugging skills and deepen my understanding of JUnit in Lab 3. 
   
   
   
