@@ -1,5 +1,13 @@
 # Part 1: Writing a webserver
 
+My code for StringServer:
+![Image](SC3.png)
+
+![Image](SC1.png)
+In the above screenshot, The main method within StringServer is called to start the server and begin handling arguments then method handlerequest is called to take in new arguments put in the URL. In this case, I inserted "Hello", then "Hello" again, then "How are you". It called parameter[1] to store these inputs in the array list "sentences" using the sentences.add() function. Then I stored all the elements of my arraylist into a string called str to hold all the arguments separated by a new line. Finally, I returned str to display all three inputs on separate lines. 
+
+![Image](SC2.png)
+In the above screenshot, The main method within StringServer is called to start the server and begin handling arguments then method handlerequest is called to take in new arguments put in the URL. In this case, I inserted "Hello", then "Hello" again, then "How are you", then "This is Mahmoud". It called parameter[1] to store these inputs in the array list "sentences" using the sentences.add() function. Then I stored all the elements of my arraylist into a string called str to hold all the arguments separated by a new line. Finally, I returned str to display all four inputs on separate lines. 
 
 
 
@@ -108,7 +116,7 @@ Failure inducing input (JUnit):
   
   
   # Part 3: What I learned from lab in weeks 2 & 3
-  I was very to learn about the URL interface, I didn't think it would be that simple and I felt good to be able to build something like that. I was also happy to practice my debugging skills and deepen my understanding of JUnit in Lab 3. 
+  I was very to learn about the URL interface, I didn't think it would be that simple and I felt good to be able to build something like that. I found it especially interesting to learn that I could store past arguments into an array to keep track of them. I was also happy to practice my debugging skills and deepen my understanding of JUnit in Lab 3. 
   
   
   
