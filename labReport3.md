@@ -1,7 +1,7 @@
 # Part 1: Writing a webserver
 
 My code for StringServer:
-![Image](SC3.png)
+<img src= "SC3.png" width="600" height="600">
 
 ![Image](SC1.png)
 In the above screenshot, The main method within StringServer is called to start the server and begin handling arguments then method handlerequest is called to take in new arguments put in the URL. In this case, I inserted "Hello", then "Hello" again, then "How are you". It called parameter[1] to store these inputs in the array list "sentences" using the sentences.add() function. Then I stored all the elements of my arraylist into a string called str to hold all the arguments separated by a new line. Finally, I returned str to display all three inputs on separate lines. 
