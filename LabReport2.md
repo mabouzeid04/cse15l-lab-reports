@@ -50,11 +50,11 @@ Failure inducing input (JUnit): The input is { 3, 2, 1, 0 } and the expected out
   
   The symptoms for reversed():
   ![Image](reversed%20symptoms.png)
-  These symptoms show that at element 1 in the array a 1 was expected but there was a 0. This is because a bug in the method causes it to copy from parts of the array that is has already reversed.
+  These symptoms show that at element 1 in the array a 1 was expected but there was a 0. This is because a bug in the method causes it to copy from parts of the array that had already reversed. This must be fixed by making a new array to copy from. 
   
   The symptoms for reverseInPlace():
   ![Image](reverseInPlace%20symptom.png)
-  These symptoms show that at element 2 in the array a 2 was expected but there was a 1. This is because a bug in the method causes it to return the original array. 
+  These symptoms show that at element 2 in the array a 2 was expected but there was a 1. This is because a bug in the method causes it to return the original array. This specific bug would be solved by returning the new array. 
   
   Before fixing the bugs in reverseInPlace(): 
   ```
@@ -68,20 +68,17 @@ Failure inducing input (JUnit): The input is { 3, 2, 1, 0 } and the expected out
   After fixing the bugs in reverseInPlace(): 
   ```
   static void reverseInPlace(int[] arr) {
-    int [] tempArr = new int[arr.length];
-    for (int i = 0; i < tempArr.length; i++) {
-      tempArr[i] = arr[i];
+    int length = arr.length;
+    for(int i = 0; i < length / 2; i++) {
+      int tempVal = arr[i];
+      arr[i] = arr[length - i - 1];
+      arr[length - i - 1] = tempVal;
     }
-
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = tempArr[arr.length - i - 1];
-    }
-  } 
+  }
   ```
   
   What the bugs were in reverseInPlace() were: The issue with this code is that after it crosses the mid point of the array, it will start copying from 
-  the already changed elements which will lead to an inaccurate reversed array. I fixed this by making an entirely new array and making a deep copy of 
-  that. After that, I reversed from the deep copied array so that the elements don't change.
+  the already changed elements which will lead to an inaccurate reversed array. I fixed this by we use a temporary variable ``tempVal`` to store the value at the current i index. Then the value on the other end, ``arr[length - i - 1]`` is assigned to the current index i. Finally, the stored value in tempVal is assigned to the opposite end ``arr[length - i - 1]``. The loop only runs length / 2 times to make sure that each pair of values is swapped only once.
   
   
   Before fixing the bugs in reversed(): 
