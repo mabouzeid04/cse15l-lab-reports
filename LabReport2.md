@@ -50,9 +50,11 @@ Failure inducing input (JUnit): The input is { 3, 2, 1, 0 } and the expected out
   
   The symptoms for reversed():
   ![Image](reversed%20symptoms.png)
+  These symptoms show that at element 1 in the array a 1 was expected but there was a 0. This is because a bug in the method causes it to copy from parts of the array that is has already reversed.
   
   The symptoms for reverseInPlace():
   ![Image](reverseInPlace%20symptom.png)
+  These symptoms show that at element 2 in the array a 2 was expected but there was a 1. This is because a bug in the method causes it to return the original array. 
   
   Before fixing the bugs in reverseInPlace(): 
   ```
