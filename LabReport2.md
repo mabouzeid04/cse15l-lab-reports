@@ -12,26 +12,26 @@ In the above screenshot, The main method within StringServer is called to start 
 
 
 # Part 2: Explaining and fixing bugs
-Failure inducing input (JUnit): 
+Failure inducing input (JUnit): The input is { 3, 2, 1, 0 } and the expected output is { 0, 1, 2, 3}.
 ```
 @Test public void myTestReverseInPlace() {
     int[] input1 = { 3, 2, 1, 0 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 0, 1, 2, 3}, input1);
-	} 
+} 
 ```
   
-Failure inducing input (JUnit): 
+Failure inducing input (JUnit): The input is { 3, 2, 1, 0 } and the expected output is { 0, 1, 2, 3 }.
 ```
 @Test
   public void myTestReversed() {
     int[] input1 = { 3, 2, 1, 0 };
     assertArrayEquals(new int[]{ 0, 1, 2, 3 }, ArrayExamples.reversed(input1));
-  } 
+} 
 ```
   
   
-  Non Failure inducing input (JUnit): 
+  Non Failure inducing input (JUnit): The input is an empty array { } and the expected output is an empty array { }. 
   ``` 
   @Test public void testReversed() {
     int[] input1 = { };
@@ -39,7 +39,7 @@ Failure inducing input (JUnit):
   } 
   ```
   
-  Non Failure inducing input (JUnit): 
+  Non Failure inducing input (JUnit): The input is {3} and the expected output is {3}.
   ``` 
   @Test public void testReverseInPlace() {
     int[] input1 = { 3 };
