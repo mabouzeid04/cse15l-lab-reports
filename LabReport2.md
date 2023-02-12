@@ -4,10 +4,10 @@ My code for StringServer:
 <img src= "SC3.png" width="600" height="600">
 
 ![Image](SC1.png)
-In the above screenshot, The main method within StringServer is called to start the server and begin handling arguments then method handlerequest is called to take in new arguments put in the URL. In this case, I inserted "Hello", then "Hello" again, then "How are you". It called parameter[1] to store these inputs in the array list "sentences" using the sentences.add() function. Then I stored all the elements of my arraylist into a string called str to hold all the arguments separated by a new line. Finally, I returned str to display all three inputs on separate lines. 
+In the above screenshot, The main method within StringServer is called to start the server and begin handling arguments then method handlerequest is called to take in new arguments put in the URL. In this case, I inserted "Hello", then "Hello" again, then "How are you". handlerequest takes in the parameter url and splits that to get our query and then it calls parameter[1] to store these inputs in the array list "sentences" using the sentences.add() function. Then I stored all the elements of my arraylist into a string called str to hold all the arguments separated by a new line. Finally, I returned str to display all three inputs on separate lines. 
 
 ![Image](SC2.png)
-In the above screenshot, The main method within StringServer is called to start the server and begin handling arguments then method handlerequest is called to take in new arguments put in the URL. In this case, I inserted "Hello", then "Hello" again, then "How are you", then "This is Mahmoud". It called parameter[1] to store these inputs in the array list "sentences" using the sentences.add() function. Then I stored all the elements of my arraylist into a string called str to hold all the arguments separated by a new line. Finally, I returned str to display all four inputs on separate lines. 
+In the above screenshot, The main method within StringServer is called to start the server and begin handling arguments then method handlerequest is called to take in new arguments put in the URL. In this case, I inserted "Hello", then "Hello" again, then "How are you", then "This is Mahmoud". handlerequest takes in the parameter url and splits that to get our query and then it calls parameter[1] to store these inputs in the array list "sentences" using the sentences.add() function. Then I stored all the elements of my arraylist into a string called str to hold all the arguments separated by a new line. Finally, I returned str to display all four inputs on separate lines. 
 
 
 
@@ -108,7 +108,7 @@ Failure inducing input (JUnit): The input is { 3, 2, 1, 0 } and the expected out
   } 
   ```
   
-  What the bugs were in reversed(): The bugs with this code was that it created newArray with the same length as array but no elements because It didn't copy the elements. After that it proceeded to copy null elements into the original array then returned the original array. I fixed the code by copying the elements in reverse order into newArray then returned the new reversed array.
+  What the bugs were in reversed(): The bugs with this code was that it created newArray with the same length as array but no elements because It didn't copy the elements. After that it proceeded to copy null elements into the original array then returned the original array. I fixed the code by copying the elements from original array in reverse order into newArray then returned the new array.
   
   
   
