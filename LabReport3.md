@@ -3,7 +3,7 @@
 I have chosen the `grep` command for this task.
 
 Option #1 `grep -r`: This option performs a recursive search. It searches for the pattern in all files under the specified directory recursively.
-
+[Source](https://docs.rackspace.com/support/how-to/grep-basics/)
 ```
 grep -r "hello"
 ```
@@ -30,6 +30,7 @@ Output:
 
 
 Option #2 `grep -w`: This option matches only whole words. It searches for the pattern only when it forms a whole word.
+[Source](https://unix.stackexchange.com/questions/524828/what-does-grep-w-do)
 ```
 grep -w "creative" travel_guides/berlitz2/*
 ```
@@ -50,6 +51,7 @@ travel_guides/berlitz2/Algarve-WhereToGo.txt:Sagres’s connections to the sea, 
 
 
 Option #3 `grep -i`: This option performs a case-insensitive search. It ignores case distinctions when searching for the pattern in the input text.
+[Source](https://alvinalexander.com/unix/edu/examples/grep.shtml)
 ```
 grep -i "pericles" travel_guides/berlitz2/*
 ```
@@ -69,6 +71,7 @@ travel_guides/berlitz2/Bali-History.txt:In the decades following, the economy st
 ```
 
 Option #4 `grep -c`: This option counts the number of times the pattern occurs in the input text and displays the count for each file.
+[Source](https://qpeng.org/computer/grep.htm)
 ```
 grep -c "the" travel_guides/berlitz2/Amsterdam-Intro.txt
 ```
