@@ -13,3 +13,9 @@ Then I typed in `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.j
 Step 7: Typed in nano ListExamples.java and pressed <enter>. 
 
 Keys pressed <down> <down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down> <right><right><right><right><right><right><right><right><right><right><right><right><delete> typed `2` <control><o><cntrl><o><enter><cntrl><x>
+
+Step 8: Keys pressed: <Up><Up><Up><enter> <Up><Up><Up><enter>
+
+  
+Step 9: git add ListExamples.java
+  
