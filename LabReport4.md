@@ -22,6 +22,6 @@ Step 8: I had to recompile the file and run the tests again. To do this I just w
   Keys pressed: `<Up><Up><Up><enter> <Up><Up><Up><enter>`
 <img src= "15L/Screen Shot 2023-02-26 at 11.38.12 PM.png">
   
-Step 9: I typed `git add ListExamples.java` then pressed enter. Then I typed in `git commit -m "Committed to main"` and pressed enter. 
-Finally, I had to type `git push origin main` to 
+Step 9: I typed `git add ListExamples.java` then pressed enter to add changes made to the file to the staging area before it can be committed. Then I typed in `git commit -m "Committed to main"` and pressed enter to save these changes. 
+Finally, I had to type `git push origin main` to commit the saved changes to the main origin repository. 
 <img src= "15L/Screen Shot 2023-02-26 at 11.52.30 PM.png"> 
