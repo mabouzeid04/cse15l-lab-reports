@@ -5,15 +5,21 @@ I have picked Lab report 3 as my favorite and have chosen to go back and explore
 I have chosen the `find` command for this task.
 
 
-`exec`: This option allows you to execute a command on each file that matches your search criteria. For example, if you want to count the number of lines in each .txt file in ./written_2, you can use this command:
+`exec`: This option allows you to execute a command on each file that matches your search criteria. For example, if you want to count the number of lines in each .txt file in the travel_guides folder, you can use this command:
 
-```find ./written_2 -name "*.txt" -type f -exec wc -l {} \;```
+```find travel_guides -name "*.txt" -type f -exec wc -l {} \;```
 
-This will output something like this:
+This outputed the following:
 ```
-12 ./written_2/file1.txt
-8 ./written_2/file2.txt
-10 ./written_2/file3.txt
+     251 travel_guides/berlitz1/HistoryJamaica.txt
+     379 travel_guides/berlitz1/HandRJamaica.txt
+     29 travel_guides/berlitz1/HandRHongKong.txt
+     264 travel_guides/berlitz1/HistoryEgypt.txt
+     139 travel_guides/berlitz1/IntroEdinburgh.txt
+     244 travel_guides/berlitz1/HistoryIsrael.txt
+     119 travel_guides/berlitz1/IntroDublin.txt
+     792 travel_guides/berlitz1/HistoryIndia.txt
+     161 travel_guides/berlitz1/IntroFrance.txt
 ```
 Another example of using -exec is to rename all .jpg files in ./written_2 to .png files. You can use this command:
 
@@ -40,5 +46,16 @@ This will output something like this:
 ./written_2/small_file3.pdf 92160
 ```
 
+Option 3: `-type` This option is used to search for files based on their type.
 
+
+```find travel_guides -type d```
+This command searches for all directories inside the travel_guides directory.
+
+Output:
+```
+travel_guides
+travel_guides/berlitz1
+travel_guides/berlitz2
+```
 
