@@ -38,7 +38,7 @@ and some more...
 Option 2: `-exec` This option allows you to execute a command on each file that matches your search criteria. 
 [Source](https://www.linuxtoday.com/developer/35-practical-examples-of-linux-find-command-3/)
 
-Example1: Count the number of lines in each .txt file in the travel_guides folder, you can use this command:
+Example 1: Count the number of lines in each .txt file in the travel_guides folder, you can use this command:
 
 ```find travel_guides -name "*.txt" -type f -exec wc -l {} \;```
 
@@ -63,7 +63,6 @@ Output:
 To see snatches of China’s traditional performing arts in a setting appropriate for an imperial banquet, try one of Beijing’s special teahouses. At these intimate dinner theaters, decorated in Qing Dynasty fashion (carved wood trim, paper lanterns, and red columns), customers can enjoy local snacks or full Chinese meals at their tables while viewing a variety of acts on stage, including opera highlights, acrobatics, magic shows, ethnic dancing, puppetry, storytelling, and comedy.
 ```
 
-
 Option 3: `-size`: This option allows you to find files that match a certain size criterion. 
 [Source](https://www.tecmint.com/35-practical-examples-of-linux-find-command/)
 
@@ -81,6 +80,7 @@ travel_guides/berlitz1/HandRLosAngeles.txt
 travel_guides/berlitz1/HistoryMadeira.txt
 travel_guides/berlitz1/IntroJerusalem.txt
 ```
+
 Example 2: find all files in travel_guides that are smaller than 1 MB and print their sizes in human-readable format. You can use this command:
 
 ```find travel_guides -size -1M -printf "%p %s\n"```
