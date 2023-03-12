@@ -2,7 +2,7 @@
 
 I have picked Lab report 3 as my favorite and have chosen to go back and explore a different command and command-line options for that command.
 
-I have chosen the `find` command for this task.
+I have chosen the `find` command for this task. Many of the optional commands that go along with find work together to bring about specific functions. Here, I will explore four different options that may overlap. Additionally, for some of the outputs, I haven't included the full output because it was pages long therefore I just added the first few lines. 
 
 Option 1: `-type` This option is used to search for files based on their type.
 [Source](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
