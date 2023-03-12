@@ -65,7 +65,7 @@ To see snatches of China’s traditional performing arts in a setting appropriat
 
 
 Option 3: `-size`: This option allows you to find files that match a certain size criterion. 
-[Source]()
+[Source](https://www.tecmint.com/35-practical-examples-of-linux-find-command/)
 
 Example 1: Find all files in travel_guides that are larger than 1 kB
 ```find travel_guides  -size +1k```
@@ -95,14 +95,40 @@ travel_guides/berlitz1/IntroJerusalem.txt
 ```
 
 Option 4: Find all files in a directory modified within a specific time period. 
+[Source](https://www.tecmint.com/35-practical-examples-of-linux-find-command/)
 
-Example 1: find all the files which are modified more than 50 days back and less than 100 days.
-```find travel_guides -mtime +50 –mtime -100```
+Example 1: find all the files which are modified less than 100 days ago.
+```find travel_guides -mtime -100```
 
 Output: 
 ```
-
+travel_guides/berlitz1/IntroJamaica.txt
+travel_guides/berlitz1/IntroGreek.txt
+travel_guides/berlitz1/HandRIsrael.txt
+travel_guides/berlitz1/WhatToEdinburgh.txt
+travel_guides/berlitz1/WhereToMadeira.txt
+travel_guides/berlitz1/WhatToGreek.txt
+travel_guides/berlitz1/HandRLakeDistrict.txt
+travel_guides/berlitz1/WhereToIbiza.txt
+travel_guides/berlitz1/WhereToHawaii.txt
+travel_guides/berlitz1/HandRMadrid.txt
+travel_guides/berlitz1/HistoryMalaysia.txt
+travel_guides/berlitz1/IntroItaly.txt
 ```
 
-Example 2:
+Example 2: find all the files which are modified more than 10 days ago.
+```find travel_guides -mtime +10```
 
+Output: 
+```
+travel_guides/berlitz1/IntroEdinburgh.txt
+travel_guides/berlitz1/HistoryIsrael.txt
+travel_guides/berlitz1/IntroDublin.txt
+travel_guides/berlitz1/HistoryIndia.txt
+travel_guides/berlitz1/IntroFrance.txt
+travel_guides/berlitz1/IntroMadeira.txt
+travel_guides/berlitz1/WhatToLakeDistrict.txt
+travel_guides/berlitz1/IntroIbiza.txt
+travel_guides/berlitz1/HistoryItaly.txt
+travel_guides/berlitz1/WhereToGreek.txt
+```
